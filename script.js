@@ -2,7 +2,7 @@
 
 let windowWidth = window.matchMedia('(max-width: 700px)');
 
-// DOM ELEMENTS
+// DOM ELEMENTS!
 
 const btnPortSwitch = document.querySelector('.portSwitch');
 const btnGoToPort = document.getElementById('btnPort');
