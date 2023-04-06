@@ -11,6 +11,13 @@
       crossorigin="anonymous"
     ></script>
     <title>MK | CV</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/LogoNoBackBlack.png"
+      width="50px"
+      height="20px"
+    />
   </head>
   <body>
     <header class="container" id="secHome">
@@ -24,11 +31,11 @@
 
       <left class="nav">
         <nav class="icons vl">
-          <i class="fa-solid fa-house fa-lg active" id="home"></i>
-          <i class="fa-solid fa-building" id="experience"></i>
-          <i class="fa-solid fa-graduation-cap" id="education"></i>
-          <i class="fa-solid fa-pen-nib" id="portfolio"></i>
-          <i class="fa-solid fa-info" id="info"></i>
+          <i class="fa-solid fa-house fa-lg navIcons active" id="home"></i>
+          <i class="fa-solid fa-building navIcons" id="experience"></i>
+          <i class="fa-solid fa-graduation-cap navIcons" id="education"></i>
+          <i class="fa-solid fa-pen-nib navIcons" id="portfolio"></i>
+          <i class="fa-solid fa-info navIcons" id="info"></i>
         </nav>
       </left>
 
@@ -39,44 +46,89 @@
       </div>
     </header>
     <section class="container bg2" id="secExp">
-      <div class="secExp">
+      <div class="secExp" id="divExp">
         <section>
-          <article>
+          <article id="graDesign">
             <div class="information">
-              <h1>Freelance Graphin Design</h1>
-              <br />
-              I have created multiple designs over the years with experience in
-              Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro and Adobe
-              After Effects. This helped with my communication skills between
-              the client and myself to ensure I produce exactly what they were
-              looking for in a design.
-              <br />
+              <h1 class="header">Freelance Graphic Design</h1>
+              <div id="graphicDesign">
+                With years of experience in Adobe Photoshop, Adobe Illustrator,
+                Adobe Premiere Pro, I have created multiple designs that have
+                received recognition from clients.
+                <br /><br />
+                My proficiency with these software applications has enabled me
+                to communicate effectively with clients, translating their
+                vision into impactful designs. In particular, my expertise in
+                Adobe Illustrator has provided me with the necessary tools to
+                create scalable vector graphics for logos and illustrations.
+                <br /><br />
+                Lastly, my experience with Adobe Premiere Pro has allowed me to
+                produce compelling video content for my personal projects. I
+                take pride in actively listening to my clients and engaging them
+                in the design process to meet their needs and preferences.
+                Overall, my experience with Adobe Photoshop, Adobe Illustrator,
+                and Adobe Premiere Pro, coupled with my communication skills,
+                makes me a valuable asset to any organization.
+                <br />
+              </div>
             </div>
-            <button id="btnPort">
-              <i class="fa-solid fa-pen-nib"></i>
-              <div class="hideText">&nbsp;&nbsp;Go to portfolio</div>
-            </button>
+            <div class="buttons">
+              <button id="btnPort">
+                <i class="fa-solid fa-pen-nib"></i>
+                <div class="hideText">&nbsp;&nbsp;Go to portfolio</div>
+              </button>
+              <button class="btnShowMore" id="moreExp">
+                <i class="fa-solid fa-caret-down"></i>
+                <div>&nbsp;&nbsp;View more</div>
+              </button>
+              <button
+                id="btnInsta"
+                onclick="window.location.href='https://www.instagram.com/michaelk.designs';"
+              >
+                <i class="fa-brands fa-instagram fa-lg"></i>
+                <div class="hideText">&nbsp;&nbsp;Instagram</div>
+              </button>
+            </div>
           </article>
 
           <article>
             <div class="information">
-              <h1>Online Video Captioning</h1>
-              <br />
-              I have done extensive freelance work captioning media through Rev.
-              Captioning media often required operating within client
-              specifications and deadlines, it also required heavy attention to
-              detail to ensure guaranteed satisfaction.
+              <h1 class="header">Online Video Captioning</h1>
+              <div id="caption">
+                I am a seasoned freelancer with extensive experience in
+                captioning media through Rev. In this role, I have developed a
+                keen attention to detail and the ability to produce high-quality
+                captions that meet client specifications and deadlines, ensuring
+                their satisfaction.
+                <br /><br />
+                Captioning media requires a deep understanding of language
+                nuances and the ability to work under pressure. I take pride in
+                my ability to produce accurate and engaging captions that
+                capture the essence of the media and convey it to the intended
+                audience. My experience in captioning media has allowed me to
+                develop strong project management skills, which I bring to all
+                aspects of my work, making me a valuable asset to any
+                organization.
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btnShowMore" id="moreCaption">
+                <i class="fa-solid fa-caret-down"></i>
+                <div>&nbsp;&nbsp;View more</div>
+              </button>
             </div>
           </article>
         </section>
         <article>
-          <div class="information">
-            <h1>Skills</h1>
-            <br />
-            I have done extensive freelance work captioning media through Rev.
-            Captioning media often required operating within client
-            specifications and deadlines, it also required heavy attention to
-            detail to ensure guaranteed satisfaction.
+          <div class="information skills">
+            <h1 class="header">Skills</h1>
+            <div id="skills"></div>
+          </div>
+          <div class="buttons">
+            <button class="btnShowMore" id="moreCaption">
+              <i class="fa-solid fa-caret-down"></i>
+              <div>&nbsp;&nbsp;View more</div>
+            </button>
           </div>
         </article>
       </div>
@@ -86,7 +138,7 @@
       <button class="portSwitch">
         <i class="fa-solid fa-arrow-right fa-lg"></i>
       </button>
-      <div class="secPort" id="port1">
+      <div class="secPort showPort" id="port1">
         <article id="tl"></article>
         <article id="tm"></article>
         <article id="tr"></article>
@@ -94,7 +146,7 @@
         <article id="bm"></article>
         <article id="br"></article>
       </div>
-      <div class="secPort hidden" id="port2">
+      <div class="secPort hidePort" id="port2">
         <article id="tl"></article>
         <article id="tm"></article>
         <article id="tr"></article>
