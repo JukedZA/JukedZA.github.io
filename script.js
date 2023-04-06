@@ -69,6 +69,7 @@ const sectionOffsets = Object.fromEntries(
 
 mediaQuery(windowWidth);
 
+// THIS SCROLLS TO A SPECIFIC PART IN THE DOCUMENT
 const scrollTo = curIcon => {
   const scrollId = curIcon.id;
   window.scrollTo({
